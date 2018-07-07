@@ -1,0 +1,15 @@
+#include <cstdio>
+#include <cstring>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	double a,b,c;
+	scanf("%lf%lf",&a,&b);
+	c = a * b;
+	printf("%.2lf",c);
+	return 0;
+}
+
