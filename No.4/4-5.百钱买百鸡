@@ -1,0 +1,25 @@
+#include <cstdio>
+#include <cstring>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int b,g,s;
+	for(b=1;b<=20;b++)
+	{
+		for (g=1;g<34;g++) 
+		{
+			//for(s=i;s<=300;s++)
+			//{
+				/*减少循环次数*/s = 100 - b - g;
+				if(b*5+g*3+s/3==100&&s>0&&/*b+g+s==100&&*/s%3==0)
+				{
+					printf("%d %d %d\n" ,b,g,s);
+				}
+			//}
+		}
+	}
+	return 0;
+}
