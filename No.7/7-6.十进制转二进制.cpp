@@ -11,9 +11,9 @@ int a[10000];
 void bre(int n)
 {
 	int f,i;
-	for(i=0;n/*浼樺寲鑷猲>0*/;i++)
+	for(i=0;n/*优化自n>0*/;i++)
 	{
-		if(n&1)/*浼樺寲鑷獂%2==1*/ a[i] = 1;
+		if(n&1)/*优化自x%2==1*/ a[i] = 1;
 		else a[i] = 0;
 		n = n >> 1; 
 	}
