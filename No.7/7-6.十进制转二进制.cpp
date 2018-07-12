@@ -10,14 +10,14 @@ int a[10000];
 
 void bre(int n)
 {
-	int f;
-	for(int i=0;n/*ÓÅ»¯×Ôn>0*/;i++)
+	int f,i;
+	for(i=0;n/*ä¼˜åŒ–è‡ªn>0*/;i++)
 	{
-		if(n&1) a[i] = 1;
+		if(n&1)/*ä¼˜åŒ–è‡ªx%2==1*/ a[i] = 1;
 		else a[i] = 0;
 		n = n >> 1; 
-		f = i;
 	}
+	f = i-1;
 	for(int i=f;i>=0;i--) printf("%d",a[i]);
 }
 
